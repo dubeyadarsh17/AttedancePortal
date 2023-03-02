@@ -1,0 +1,131 @@
+﻿* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+body {
+    background: #fff;
+    font-family: 'Poppins', sans-serif;
+}
+
+.sidenav {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    height: 100%;
+    left: 0;
+    background: #F2F4F4;
+    width: 70px;
+    overflow: hidden;
+    transition: width 0.2s linear;
+    box-shadow: 0 20px 35px rgba(0,0,0,0.1);
+    z-index: 1000;
+}
+
+.side-items {
+    margin: 0;
+    padding: 0;
+}
+
+.logo {
+    width: 50px;
+    height: 45px;
+    text-align: center;
+    display: flex;
+    transition: all 0.5s ease;
+    margin: 10px 0 50px 10px;
+    border-radius: 50%;
+    background: url('../images/mob1.png') no-repeat;
+}
+
+
+    .logo img {
+        width: 45px;
+        height: 45px;
+        border-radius: 50%;
+    }
+
+/*.logo span {
+        font-weight: bold;
+        padding-left: 15px;
+        font-size: 18px;
+        text-transform: uppercase;
+    }*/
+li {
+    list-style: none;
+}
+
+.item {
+    position: relative;
+    color: rgb(85,83,83);
+    font-size: 14px;
+    display: block;
+    width: 300px;
+    padding-left: 5px;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    padding-right: 1px;
+    text-decoration: none;
+}
+
+/*hr {
+    border: 0;
+    height: 1px;
+    width: 100%;
+    background: rgb(247, 241, 241);
+    margin: 15px 0 10px;
+}*/
+
+.fass {
+    position: relative;
+    width: 70px;
+    height: 40px;
+    top: 5px;
+    font-size: 20px;
+    text-align: center;
+    color: #6DBCF3;
+}
+
+/* nav:hover .nav-item{
+    display: flex;
+    flex-direction: none;
+    position: relative;
+    top: 12px;
+    margin-left: 10px;
+    font-size: 25px;
+    font-weight: 500;
+} */
+
+.nav-items {
+    position: relative;
+    top: 5px;
+    margin-left: 0px;
+    font-size: 15px;
+    /*font-weight: 100;*/
+}
+
+.item:hover {
+    background-color: #D5DBDB;
+    
+}
+
+.sidenav:hover {
+    width: 230px;
+    transition: all 0.5s ease;
+}
+
+    .sidenav:hover .logo {
+       margin: 10px 0 50px 10px;
+        width: 100%;
+        height: 45px;
+        border-radius: 0px;
+        background: url('../images/m-logo.png') no-repeat;
+    }
+    .sidenav:hover .src-btn{
+        margin-left:135px;
+    }
+    

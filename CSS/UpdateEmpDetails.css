@@ -1,0 +1,16 @@
+﻿body {
+    font-family: 'Poppins', sans-serif;
+    border: none;
+    height: 100vh;
+}
+
+.container1 {
+    margin: 10px 0 0 150px;
+    background: #fff;
+    /*border-radius: 10px;*/
+    border: none;
+}
+
+.fas{
+    font-size: 40px;
+}

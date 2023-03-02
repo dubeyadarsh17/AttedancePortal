@@ -1,0 +1,123 @@
+﻿
+body {
+    background: #fff;
+    font-family: 'Poppins', sans-serif;
+}
+.signup-form {
+    font-family: "Roboto", sans-serif;
+    width: 650px;
+    margin: 30px auto;
+    background: linear-gradient(to right, #ffffff 0%, #fafafa 50%, #ffffff 99%);
+    border-radius: 10px;
+    border: solid 1px #EFF0F1;
+}
+
+.form-header {
+    background-color: #EFF0F1;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+    .form-header h1 {
+        font-size: 30px;
+        text-align: center;
+        color: #666;
+        padding: 20px 0;
+        border-bottom: 1px solid #cccccc;
+    }
+/*---------------------------------------*/
+.form-body {
+    padding: 10px 40px;
+    color: #666;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-body .label-title {
+    color: #1BBA93;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.form-body .form-input {
+    font-size: 17px;
+    box-sizing: border-box;
+    width: 100%;
+    height: 34px;
+    padding-left: 10px;
+    padding-right: 10px;
+    color: #333333;
+    text-align: left;
+    border: 1px solid #d6d6d6;
+    border-radius: 4px;
+    background: white;
+    outline: none;
+}
+
+.horizontal-group .left {
+    float: left;
+    width: 49%;
+}
+
+.horizontal-group .right {
+    float: right;
+    width: 49%;
+}
+
+input[type="file"] {
+    outline: none;
+    cursor: pointer;
+    font-size: 17px;
+}
+
+::-webkit-input-placeholder {
+    color: #d9d9d9;
+}
+
+/*---------------------------------------*/
+/* Form Footer */
+/*---------------------------------------*/
+.form-footer {
+    clear: both;
+}
+/*---------------------------------------*/
+/* Form Footer */
+/*---------------------------------------*/
+.signup-form .form-footer {
+    background-color: #EFF0F1;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    padding: 10px 40px;
+    text-align: right;
+    border-top: 1px solid #cccccc;
+    height:50px;
+}
+
+/*.btnhov:hover .fa {
+    background: #2062C1;
+    border-radius: 5px;
+}
+.btnhov:hover .btn {
+    background: #2062C1;
+    border-radius: 5px;
+}*/
+
+
+
+/*.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #1BBA93;
+    font-size: 17px;
+    border: none;
+    border-radius: 5px;
+    color: #bcf5e7;
+    cursor: pointer;
+}
+
+    .btn:hover {
+        background-color: #169c7b;
+        color: white;
+    }*/

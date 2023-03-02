@@ -1,0 +1,109 @@
+﻿body {
+    font-family: 'Poppins', sans-serif;
+    border: none;
+    height: 100vh;
+}
+
+.container1 {
+    margin: 10px 0 0 150px;
+    background: #fff;
+    /*border-radius: 10px;*/
+    border: none;
+}
+
+h1{
+    margin-left: 0;
+}
+
+.form-input {
+    font-size: 17px;
+    box-sizing: border-box;
+    width: 100%;
+    height: 34px;
+    padding-left: 10px;
+    padding-right: 10px;
+    color: #333333;
+    text-align: left;
+    border: 1px solid #d6d6d6;
+    border-radius: 4px;
+    background: white;
+    outline: none;
+}
+
+
+/* employee details*/
+.attendance {
+    margin-top: 20px;
+    text-transform: capitalize;
+}
+
+.attendance-list {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    background: #F2F2F2;
+    border-radius: 10px;
+    box-shadow: 0 20px 35px rgba(0, 0, 0, 0.1);
+}
+
+.table {
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 15px;
+    min-width: 100%;
+    overflow: hidden;
+    border-radius: 5px 5px 0 0;
+}
+
+table thead tr {
+    color: #808080;
+    /* background: #01A9DB;*/
+    text-align: left;
+    font-weight: bold;
+}
+
+.table th,
+.table td {
+    padding: 12px 15px;
+}
+
+.table tbody tr {
+    border-bottom: 1px solid #ddd;
+}
+
+    .table tbody tr:nth-of-type(odd) {
+        background: #f3f3f3;
+    }
+
+    .table tbody tr.active {
+        font-weight: bold;
+        color: #4AD489;
+    }
+
+    .table tbody tr:last-of-type {
+        border-bottom: 2px solid #01A9DB;
+        /* #4AD489*/
+    }
+
+.table .button {
+    padding: 6px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    background: transparent;
+    border: 1px solid #46C7C7;
+}
+
+    .table .button:hover {
+        background: #46C7C7;
+        color: #fff;
+        transition: 0.5rem;
+    }
+
+#emptable_filter{
+    margin-bottom:20px;
+}
+#emptable_wrapper{
+    margin-top:15px;
+}
+
+

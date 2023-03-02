@@ -1,0 +1,50 @@
+﻿.circular-progress {
+    position: relative;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+}
+
+    .circular-progress:before {
+        content: "";
+        position: absolute;
+        height: 80%;
+        width: 80%;
+        background-color: #ffffff;
+        border-radius: 50%;
+    }
+
+.value-container {
+    position: relative;
+    font-family: "Poppins", sans-serif;
+    font-size: 20px;
+    color: #06A933;
+}
+
+/*absent*/
+.circular-progress1 {
+    position: relative;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+}
+
+    .circular-progress1:before {
+        content: "";
+        position: absolute;
+        height: 80%;
+        width: 80%;
+        background-color: #ffffff;
+        border-radius: 50%;
+    }
+
+.value-container1 {
+    position: relative;
+    font-family: "Poppins", sans-serif;
+    font-size: 20px;
+    color: #DE1B15;
+}

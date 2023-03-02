@@ -1,0 +1,71 @@
+﻿/*
+
+
+.imgside {
+    margin-left: 150px;
+}
+
+.cardbd {
+    margin-left: 90px;
+}
+
+
+.btns {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.7rem 2rem;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    backface-visibility: hidden;
+    border: 0.3rem solid transparent;
+    border-radius: 3rem;
+}
+
+.cbtn {
+    border-color: transparent;
+    background-color: rgb(236, 224, 224);
+    color: #000;
+    transition: transform 0.2s cubic-bezier(0.235, 0, 0.05, 0.95);
+}
+
+    .cbtn:hover {
+        transform: perspective(1px) scale3d(1.044, 1.044, 1) translateZ(0) !important;
+    }
+*/
+
+
+body {
+    background: #f5f9f9;
+}
+
+.btns {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.7rem 2rem;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    backface-visibility: hidden;
+    border-radius: 3rem;
+}
+
+.cbtn {
+    border-color: transparent;
+    background: linear-gradient(to right, #e65c00, #f9d423);
+    background-repeat: no-repeat;
+    color: #000;
+    transition: transform 0.2s cubic-bezier(0.235, 0, 0.05, 0.95);
+}
+
+    .cbtn:hover {
+        transform: perspective(1px) scale3d(1.044, 1.044, 1) translateZ(0) !important;
+    }

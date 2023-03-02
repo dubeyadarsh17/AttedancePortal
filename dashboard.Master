@@ -1,0 +1,128 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="dashboard.master.cs" Inherits="AttedancePortal.dashboard" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <!-- bootstap cdn-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous" />
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+
+    <!-- FontAwesome cdn-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- JQuery cdn-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js" integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- google fonts cdn-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,700;1,100;1,200;1,300;1,400;1,700&display=swap" rel="stylesheet">
+
+    <!-- TopNavbhar -->
+    <link href="CSS/StyleSheet1.css" rel="stylesheet" />
+
+
+    <!-- SideNavbhar-->
+    <link href="CSS/sidenav.css" rel="stylesheet" />
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div style="margin-left: 70px; border-bottom: solid 2px;">
+            <!-- TopNavBar-->
+
+            <nav class="navbar navbar-expand-lg navbar-light tnav ">
+                <div class="container-fluid">
+
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+                        <%--search button--%>
+                        <%--<div class="input-group src-btn">
+                            <div>
+                                <input type="search" id="search" class="form-control" placeholder="search" />
+                            </div>
+                            <button type="button" class="btn btn-secondary"><i class="fas fa-search"></i></button>
+                        </div>--%>
+                   
+                <ul class="nav navbar-nav navbar-right ">
+                    <div style="flex:1"></div>
+                    <li class="nav-item active pe-4 " style="display: flex;">
+                        <asp:Image ID="profileimg" class="rounded-circle user-pic " Height="40px" Width="40px" asp-append-version="true" runat="server" ImageUrl='<%#Eval("emp_profileimg") %>' onclick="toggleMenu()" />
+                        <asp:Label ID="username" class="nav-link" runat="server"></asp:Label>
+                        <div class="sub-menu-wrap" id="subMenu">
+                            <div class="sub-menu">
+                                <a href="UserProfile.aspx" class="sub-menu-link">
+                                    <i class="fass fa-solid fa-user-pen"></i>
+                                    <span class="nav-items">Profile</span>
+                                </a>
+                                <hr>
+                                <a href="UserProfileCard.aspx" class="sub-menu-link">
+                                    <i class="fass fa-solid fa-gear"></i>
+                                    <span class="nav-items">Settings</span>
+
+                                </a>
+                                <hr>
+                                <asp:LinkButton ID="Logout" runat="server" class="sub-menu-link" OnClick="Logout_Click"> <i class="fass fa-solid fa-right-from-bracket"></i>
+                                             <span class="nav-items">Logout</span>
+                                </asp:LinkButton>
+                                <%--<a href="Login.aspx" class="sub-menu-link">
+                                    <i class="fass fa-solid fa-right-from-bracket"></i>
+                                    <span class="nav-items">Logout</span>
+                                </a>--%>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-item active"></li>
+                </ul>
+                         </div>
+                </div>
+            </nav>
+        </div>
+
+        <!-- SideNavbar-->
+        <nav class="sidenav" style="height: 165%; z-index: 1000; position:fixed; top:0; left:0">
+            <ul class="side-items">
+                <li>
+                    <a href="#" class="logo">
+                        <%--<img src="images/m-logo.png" alt="logo" width="100" height="100">--%>
+                    </a>
+                </li>
+                <li><asp:LinkButton ID="overview" runat="server" class="item" href="Home.aspx">
+                    <i class="fass fa-solid fa-chart-line"></i>
+                    <span class="nav-items">Home</span>
+               </asp:LinkButton></li>
+                
+                <li><asp:LinkButton ID="Teamembers" runat="server"  class="item" OnClick="Teamembers_Click"><i class="fass fa-solid fa-people-group"></i>
+                    <span class="nav-items">Team Members</span></asp:LinkButton></li>
+
+                <li><asp:LinkButton ID="Attendance" runat="server" href="Attendance.aspx" class="item"><i class="fass fa-solid fa-user-clock"></i>
+                    <span class="nav-items">Mark Attendance</span></asp:LinkButton></li>
+
+                <li><asp:LinkButton ID="assets" runat="server"  class="item" OnClick="assets_Click"><i class="fass fa-sharp fa-solid fa-computer"></i>
+                    <span class="nav-items">Assets</span></asp:LinkButton></li>
+
+                <li><asp:LinkButton ID="calender" runat="server" href="WebForm14.aspx" class="item"><i class="fass fa-solid fa-calendar-days"></i>
+                    <span class="nav-items">Calender</span></asp:LinkButton></li>
+
+                 <li><asp:LinkButton ID="LinkButton1" runat="server" href="EmpAttendance.aspx" class="item"><i class="fass fa-solid fa-calendar-days"></i>
+                    <span class="nav-items">View Attendance</span></asp:LinkButton></li>
+
+                 <li><asp:LinkButton ID="Addemp" runat="server" href="register.aspx" class="item"><i class="fass fa-solid fa-user-plus"></i>
+                    <span class="nav-items">Add Employee</span></asp:LinkButton></li>
+            </ul>
+        </nav>
+
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        </asp:ContentPlaceHolder>
+    </form>
+    <script src="JS/JavaScript.js"></script>
+</body>
+</html>
